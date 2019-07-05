@@ -1,0 +1,17 @@
+/*! CSS Used from: file:///C:/Users/Samarth/Desktop/index_files/qa-styles.css */
+:-moz-placeholder{color:#bdc3c7;font-style:italic;}
+::-webkit-input-placeholder{color:#bdc3c7;font-style:italic;}
+*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+a{color:#2980b9;text-decoration:none;}
+a:active,a:focus{color:#3498db;text-decoration:none;outline:0;}
+a:visited{color:#2980b9;text-decoration:none;}
+a:hover{color:#3498db;text-decoration:underline;}
+p{margin:0 0 1em;}
+/*! CSS Used from: Embedded */
+.alert{border-radius:5px;background:#91decf;background:-webkit-linear-gradient(to left, #dde8fa, #91decf);background:linear-gradient(to right, #dde8fa, #91decf);color:black;padding:20px;text-align:center;font-family:"Ubuntu", "Helvetica", "Arial", "FreeSans", sans-serif;font-size:25px;font-weight:400;opacity:1;}
+.closebtn{margin-left:15px;color:white;font-weight:bold;float:right;font-size:22px;line-height:20px;cursor:pointer;transition:0.3s;}
+.closebtn:hover{color:black;}
+/*! CSS Used from: Embedded */
+.alert{border-radius:5px;background:rgba(233, 30, 99, 0.62);background:-webkit-linear-gradient(to left, rgba(244, 67, 54, 0.55), rgba(233, 30, 99, 0.62));background:linear-gradient(to right, rgba(244, 67, 54, 0.55), rgba(233, 30, 99, 0.62));color:black;padding:20px;text-align:center;font-family:"Ubuntu", "Helvetica", "Arial", "FreeSans", sans-serif;font-size:25px;font-weight:400;opacity:1;}
+.closebtn{margin-left:15px;color:white;font-weight:bold;float:right;font-size:22px;line-height:20px;cursor:pointer;transition:0.3s;}
+.closebtn:hover{color:black;}

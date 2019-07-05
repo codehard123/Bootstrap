@@ -1,0 +1,12 @@
+.homeBody-container{
+    height: 820px;
+    width:500px;
+    background-color: antiquewhite;
+    position: absolute;
+    left:30px;
+}
+.homeBody-text{
+    color:#900080;
+    margin: 5px;
+    padding: 12px;
+}
