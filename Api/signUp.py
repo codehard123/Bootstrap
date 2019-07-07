@@ -124,7 +124,7 @@ def putQuestion():
     connection.close()
     return(jsonify({'msg':"Response successfully submitted"}))
 @app.route("/",methods=['GET'])
-def showQuotes():
+def showCategory():
 
     connection=sqlite3.connect('mydb.db')
     cursor=connection.cursor()
@@ -146,5 +146,20 @@ def showQuotes():
         
 
     return (jsonify({'category':_ansDict}))
-     
+@app.route("/category/<category>", methods=['GET'])
+def displayCategoryQuestions(category):
+    connection=sqlite3.connect('mydb.db')
+    cursor=connection.cursor()
+    select_query="select * from questions where category=?"
+    rows=cursor.execute(select_query,(category,))
+    _ansDict=[]
+    for row in rows:
+        _ansDict.append({'title':row[1],'desc':row[2],'tags':row[3],'subject':row[4],'upvotes':row[5],'downvotes':row[6],'author':row[7],'dateTime':row[8],'category':row[12]})
+    return (jsonify({'question':_ansDict}))    
+@app.route("/quotes",methods=['GET'])
+def showQuotes():
+    quote=quotes.quotes[quotes.x]
+    return(jsonify({'quotes':quote}))
+
+
 app.run(debug=True)

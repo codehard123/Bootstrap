@@ -1,7 +1,24 @@
 import React from "react"
 import "./sidebar.css"
-function SideBar(props)
+import axios from "axios"
+
+class SideBar extends React.Component
 {
+    constructor()
+    {
+        super()
+        this.state={
+            quote:null
+        }
+    }
+    componentDidMount(){
+    axios.get("http://localhost:5000/quotes")
+        .then((res)=>{
+            this.setState({quote:res.data.quotes})
+        })    
+    }
+    render()
+    {
 return(
     <div class="sideBar-container">
             <div>
@@ -10,14 +27,15 @@ return(
 <div class="sideBar-textHeader">
     <div class="sideHead">
             <div class="sideHead-background">
-                <div class="quote">{props.quote}</div>
+                <div class="quote">{this.state.quote}</div>
                 </div> 
     </div>
     
 </div>
 </div>
         </div>
-
 )
+    }
+
 }
 export default SideBar;

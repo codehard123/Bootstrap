@@ -1,0 +1,131 @@
+.recent-container{
+    background-color:wheat;
+    width:770px;
+    height:120px;
+    
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.votes-container{
+    height: 70px;
+    width: 70px;
+    background-color:#ECF0F1;
+    position: absolute;
+    top:25px;
+    left:0px;
+    
+}
+.Up{
+    position: absolute;
+    padding: 2px;
+    left:2px;
+    top:2px;
+}
+.Down{
+    position: absolute;
+    left:3px;
+    top:50px;
+}
+.Votes{
+    font-size: 30px;
+    position: absolute;
+    left:30px;
+    top:10px;
+    color:#445F7A;
+
+}
+.votes-text{
+    font-size: 13px;
+    color:#445F7A;
+    position: absolute;
+    bottom: 5px;
+}
+.answers-container{
+    height: 70px;
+    width: 70px;
+    border:1px solid #FF0000;
+    z-index: 2;
+    position: absolute;
+    top: 25px;
+    left:70px;
+}
+.answers{
+    font-size: 30px;
+    position: absolute;
+    color:red;
+    left:19px;
+    text-align: center;
+    top:15px;
+
+}
+.answers-text{
+    color:red;
+    top: 50px;
+    left:6px;
+    position: absolute;
+    font-size: 13px;
+    text-align:center;
+}
+.question{
+    color:#3498DB;
+    font-family: 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+    
+    font-weight: bold;
+    top:0px; 
+     left:0px; 
+    text-align: left;
+    position:absolute;
+    top:30px;
+    left:150px;
+}
+.question:hover{
+    text-decoration: underline;
+    
+}
+.question-img{
+    position: absolute;
+    top:60px;
+    left:150px;
+    z-index: 3;
+
+}
+.question-ask{
+    position: absolute;
+    top: 68px;
+    left:185px;
+
+    
+}
+.question-subject{
+    color:#3498DB;
+    position: absolute;
+    top: 1px;
+    left:165px;
+
+}
+.question-subject:hover{
+    text-decoration: underline;
+}
+.question-asker{
+    position: absolute;
+    top:0px;
+    left:250px;
+    color:#3498DB;
+    height: 10px;
+    word-wrap:;
+    background-color: firebrick;
+}
+.todu{
+    position: absolute;
+    /* bottom:267px;
+    left:410px; */
+    left:220px;
+    
+    top:0px;
+    
+}
+.question-asker:hover{
+    text-decoration: underline;
+}

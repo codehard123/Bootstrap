@@ -131,6 +131,7 @@ class Navbar extends React.Component{
         else
         {
           this.setState({showLoginMSG:true})
+          localStorage.setItem('cool-jwt',response.data.result)
         }
       })
   }
